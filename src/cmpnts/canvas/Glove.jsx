@@ -6,22 +6,22 @@ const Glove = ({ isMobile }) => {
   const glove =useGLTF('./boxing_glove/scene.gltf')
   return (
     <mesh>
-      <hemisphereLight intensity={0.8} groundColor='black'/>
+      <hemisphereLight intensity={0.45} groundColor='black'/>
       <directionalLight position={[0 , 0, 0.05]}/>
-      <spotLight 
-        position={[-20, 50, 10]}
-        angle={0.12}
+      {/* <spotLight 
+        position={[2,2, 2]}
+        angle={0}
         penumbra={1}
-        intensity={1}
+        intensity={50}
         castShadow
         shadow-mapSize={1024}
-        />
-        <pointLight intensity={7}/>
+        /> */}
+        <pointLight intensity={1}/>
       <primitive
         object={glove.scene} 
-        scale ={isMobile? 30 : 35} 
-        position={isMobile ? [0,2.5,-1] : [1,3, -1.5]}
-        rotation={[-0.01,-0.2,-0.06]}
+        scale ={isMobile? 26 : 32} 
+        position={isMobile ? [0,3.3,-1] : [0,3,-1.5]}
+        
         />
     </mesh>
   )
@@ -48,17 +48,18 @@ const GloveCanvas = ()=>{
 
 
   return(
-    <Canvas frameloop='demand'
-      
+    <Canvas 
+      frameloop='demand'
       shadows 
       camera={{position:[20,20,20],fov:25}}
+      dpr={[1, 2]}
       gl={{preserveDrawingBuffer:true}}
       >
         <Suspense fallback={<CanvasLoader/>}>
           <OrbitControls 
             enableDamping={false}
             autoRotate
-            autoRotateSpeed={13.3}
+            autoRotateSpeed={7.5}
             enableZoom={false}
             maxPolarAngle={Math.PI/2}
             minPolarAngle={Math.PI/2}

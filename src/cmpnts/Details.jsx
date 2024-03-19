@@ -10,7 +10,7 @@ import {fadeIn,textVariant } from '../utils/motion'
 
 const ServiceCard = ({index , title ,icon}) =>{
   return (
-    <Tilt className='xs:w-[250px] w-full' >
+    <Tilt className='xs:w-[250px] w-full mx-auto' >
       <motion.div 
         className='w-full p-[1px] rounded-[20px] shadow-card green-pink-gradient '
         variants={fadeIn("right","spring" , 0.5* index, 0.75)}>
@@ -38,7 +38,7 @@ function Details() {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview</h2>
+        <h2 className={styles.sectionHeadText}>Program</h2>
       </motion.div>
       <div className=''>
 

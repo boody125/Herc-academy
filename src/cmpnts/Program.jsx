@@ -14,14 +14,14 @@ function Program() {
      
             <motion.div variants={textVariant()}>
                 
-                <h2 className={styles.sectionHeadText}>Program</h2>
+                <h2 className={styles.sectionHeadText}>Why us ?</h2>
             </motion.div>
             
 
-            <div className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]"
+            <div className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px] "
             >
                 
-                <motion.p variants={fadeIn(" " ," " ,0.1 ,1)} className={`${styles.sectionSubText} mt-8 mb-3 text-[#FFB000]`}> Ready for Battle ?</motion.p>
+                <motion.p variants={fadeIn(" " ," " ,0.1 ,1)} className={`${styles.sectionSubText} mt-8 mb-3 text-[#FFB000] `}> Ready for Battle ?</motion.p>
                 <div className='flex lg:flex-row sm:flex-col 
                 xs:flex-col gap-24'>
                     <motion.p variants={fadeIn(" " ," " ,0.3 ,1)} className=''>Take Boxing or Kickboxing conditioning to Fight Fit and Daily Ultimate 

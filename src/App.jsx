@@ -16,8 +16,9 @@ function App() {
           <Navbar/> 
           <Hero/>
         </div>
-        <Details/>
         <Program/>
+        <Details/>
+        
         <Contacts/>
 
       </div>

@@ -14,7 +14,7 @@ const Hero = () => {
       flex lg:flex-row items-start sm:flex-col 
       xs:flex-col text-center justify-center `}>
         
-        <motion.div className='mr-2' variants={fadeIn("right","spring" , 0.5* 1, 0.75)}>
+        <motion.div className='m-auto' variants={fadeIn("right","spring" , 0.5* 1, 0.75)}>
             <h1 className={`${styles.heroHeadText} text-white `}>
               <span className='text-white'>Welcome <br /> to</span>
               <br />
@@ -22,14 +22,14 @@ const Hero = () => {
               
               
             </h1>
-            <p className={`${styles.heroSubText} mt-2 text-white text-[17px]`}> soar to new heights
-              <br className='sm:block hidden' />martial arts fitness academy
+            <p className={`${styles.heroSubText} mt-2 text-white text-[17px] font-serif tracking-tight `}> soar to new heights
+              <br className='' />martial arts fitness academy
             </p>
             
 
         </motion.div>
-        <motion.div  variants={textVariant()} className=' lg:ml-10 lg:mt-28 h-72'>
-          <GloveCanvas/>
+        <motion.div  variants={textVariant()} className=' m-auto h-72'>
+          <GloveCanvas />
         </motion.div>
         
         {/* <motion.div  variants={textVariant()} className='flex lg:ml-6 fixed w-64 h-96 right-20'>
