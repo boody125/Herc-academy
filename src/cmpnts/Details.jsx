@@ -37,17 +37,20 @@ function Details() {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>introduction</p>
+
         <h2 className={styles.sectionHeadText}>Program</h2>
       </motion.div>
       <div className=''>
 
       <motion.p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         variants={fadeIn(" " ," " ,0.1 ,1)}>
-          Take Boxing or Kickboxing conditioning to Fight Fit and Daily Ultimate 
-          Training (HIIT) to immerse yourself in invigorating workout.
-          Tailored to benefit all ages and athletic abilities.
-          Come try and see what it is all about.
+          <span className='text-[#FFB000]'>Welcome to the heart of our gym </span>
+          <br /> our comprehensive training programs designed to help you
+          reach your full potential in mixed martial arts, boxing, jiujutsu, and kickboxing.
+          <br />
+          At Herc Academy, we believe that the journey to mastery is not just about 
+          mastering techniques; it's about embracing a mindset of continual growth, 
+          pushing boundaries, and unlocking the champion within you.
 
       </motion.p>
 
